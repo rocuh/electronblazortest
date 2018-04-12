@@ -1,0 +1,17 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",    
+	"package-win": "electron-packager . BlazorApp --platform=win32 --arch=ia32 --overwrite",
+	"package-mac": "electron-packager . BlazorApp --platform=darwin --arch=x64 --overwrite"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.8.4"
+  }
+}
